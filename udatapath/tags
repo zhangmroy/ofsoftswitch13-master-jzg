@@ -1,0 +1,549 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ACTION_SET_H	action_set.h	33;"	d
+CRC32_H	crc32.h	35;"	d
+CRC32_TABLE_BITS	crc32.h	40;"	d
+CRC32_TABLE_SIZE	crc32.h	41;"	d
+DATAPATH_H	datapath.h	40;"	d
+DEFAULT_MAX_BAND_PER_METER	meter_table.h	44;"	d
+DEFAULT_MAX_METER	meter_table.h	43;"	d
+DEFAULT_MAX_METER_COLOR	meter_table.h	45;"	d
+DP_ACTIONS_H	dp_actions.h	33;"	d
+DP_BUFFERS_H	dp_buffers.h	41;"	d
+DP_CAPABILITIES_H	dp_capabilities.h	35;"	d
+DP_CONTROL_H	dp_control.h	33;"	d
+DP_DESC	datapath.c	84;"	d	file:
+DP_EXP_H	dp_exp.h	33;"	d
+DP_MAX_PORTS	dp_ports.h	112;"	d
+DP_PORTS_H	dp_ports.h	41;"	d
+DP_SUPPORTED_ACTIONS	dp_capabilities.h	53;"	d
+DP_SUPPORTED_CAPABILITIES	dp_capabilities.h	45;"	d
+DP_SUPPORTED_GROUPS	dp_capabilities.h	104;"	d
+DP_SUPPORTED_GROUP_CAPABILITIES	dp_capabilities.h	109;"	d
+DP_SUPPORTED_MATCH_FIELDS	dp_capabilities.h	67;"	d
+FLOW_TABLE_H	flow_table.h	32;"	d
+FLOW_TABLE_MAX_ENTRIES	flow_table.h	40;"	d
+FLOW_entry_H	flow_entry.h	32;"	d
+GROUP_TABLE_H	group_table.h	33;"	d
+GROUP_TABLE_MAX_BUCKETS	group_table.h	48;"	d
+GROUP_TABLE_MAX_ENTRIES	group_table.h	47;"	d
+GROUP_entry_H	group_entry.h	33;"	d
+HW_DESC	datapath.c	82;"	d	file:
+IS_HW_PORT	dp_ports.h	80;"	d
+IS_HW_PORT	dp_ports.h	82;"	d
+LOG_MODULE	action_set.c	44;"	d	file:
+LOG_MODULE	datapath.c	69;"	d	file:
+LOG_MODULE	dp_actions.c	50;"	d	file:
+LOG_MODULE	dp_buffers.c	48;"	d	file:
+LOG_MODULE	dp_control.c	48;"	d	file:
+LOG_MODULE	dp_exp.c	48;"	d	file:
+LOG_MODULE	dp_ports.c	56;"	d	file:
+LOG_MODULE	flow_entry.c	50;"	d	file:
+LOG_MODULE	flow_table.c	44;"	d	file:
+LOG_MODULE	group_entry.c	43;"	d	file:
+LOG_MODULE	group_table.c	47;"	d	file:
+LOG_MODULE	meter_entry.c	46;"	d	file:
+LOG_MODULE	meter_table.c	46;"	d	file:
+LOG_MODULE	pipeline.c	56;"	d	file:
+MAIN_CONNECTION	datapath.c	87;"	d	file:
+MATCH_EXT_H	match_std.h	33;"	d
+MAX_HW_NAME_LEN	dp_ports.h	74;"	d
+METER_ENTRY_H	meter_entry.h	33;"	d
+METER_TABLE_H	meter_table.h	33;"	d
+METER_TABLE_MAX_BANDS	meter_table.h	46;"	d
+MFR_DESC	datapath.c	81;"	d	file:
+NO_BUFFER	dp_buffers.h	49;"	d
+N_ACTIONS	flow_table.h	45;"	d
+N_INSTRUCTIONS	flow_table.h	44;"	d
+N_PKT_BUFFERS	dp_buffers.c	61;"	d	file:
+N_WILDCARDED	flow_table.h	46;"	d
+OFP_FATAL	udatapath.c	87;"	d	file:
+OFP_FATAL	udatapath.c	92;"	d	file:
+OVERWRITE_SECS	dp_buffers.c	65;"	d	file:
+PACKET_H	packet.h	34;"	d
+PACKET_HANDLE_STD_H	packet_handle_std.h	32;"	d
+PIPELINE_H	pipeline.h	32;"	d
+PKT_BUFFER_BITS	dp_buffers.c	58;"	d	file:
+PKT_BUFFER_MASK	dp_buffers.c	62;"	d	file:
+PKT_COOKIE_BITS	dp_buffers.c	59;"	d	file:
+PKT_Q_LOCK	dp_ports.c	70;"	d	file:
+PKT_Q_UNLOCK	dp_ports.c	71;"	d	file:
+PORT_IN_USE	dp_ports.h	85;"	d
+PTIN_CONNECTION	datapath.c	88;"	d	file:
+SERIAL_NUM	datapath.c	85;"	d	file:
+SWP_HW_DRV_PORT	dp_ports.h	/^    SWP_HW_DRV_PORT      = 1 << 1,    \/* Port controlled by HW driver *\/$/;"	e	enum:sw_port_flags
+SWP_USED	dp_ports.h	/^    SWP_USED             = 1 << 0,    \/* Is port being used *\/$/;"	e	enum:sw_port_flags
+SW_DESC	datapath.c	83;"	d	file:
+TABLE_FEATURES_NUM	flow_table.h	41;"	d
+THIS_MODULE	udatapath.c	68;"	d	file:
+TXQ_LIMIT	datapath.h	134;"	d
+action	action_set.c	/^    struct ofl_action_header  *action;  \/* these actions point to actions in$/;"	m	struct:action_set_entry	typeref:struct:action_set_entry::ofl_action_header	file:
+action_set	action_set.c	/^struct action_set {$/;"	s	file:
+action_set	packet.h	/^    struct action_set  *action_set; \/* action set associated with the packet *\/$/;"	m	struct:packet	typeref:struct:packet::action_set
+action_set_clear_actions	action_set.c	/^action_set_clear_actions(struct action_set *set) {$/;"	f
+action_set_clone	action_set.c	/^action_set_clone(struct action_set *set) {$/;"	f
+action_set_create	action_set.c	/^action_set_create(struct ofl_exp *exp) {$/;"	f
+action_set_create_entry	action_set.c	/^action_set_create_entry(struct ofl_action_header *act) {$/;"	f	file:
+action_set_destroy	action_set.c	/^void action_set_destroy(struct action_set *set) {$/;"	f
+action_set_entry	action_set.c	/^struct action_set_entry {$/;"	s	file:
+action_set_execute	action_set.c	/^action_set_execute(struct action_set *set, struct packet *pkt, uint64_t cookie) {$/;"	f
+action_set_order	action_set.c	/^action_set_order(struct ofl_action_header *act) {$/;"	f	file:
+action_set_print	action_set.c	/^action_set_print(FILE *stream, struct action_set *set) {$/;"	f
+action_set_to_string	action_set.c	/^action_set_to_string(struct action_set *set) {$/;"	f
+action_set_write_action	action_set.c	/^action_set_write_action(struct action_set *set,$/;"	f	file:
+action_set_write_actions	action_set.c	/^action_set_write_actions(struct action_set *set,$/;"	f
+actions	action_set.c	/^    struct list     actions;   \/* the list of actions in the action set,$/;"	m	struct:action_set	typeref:struct:action_set::list	file:
+actions	flow_table.c	/^struct ofl_action_header actions[] = { {OFPAT_OUTPUT, 4}, $/;"	v	typeref:struct:ofl_action_header
+add_ports	udatapath.c	/^add_ports(struct datapath *dp, char *port_list)$/;"	f	file:
+add_to_timeout_lists	flow_table.c	/^add_to_timeout_lists(struct flow_table *table, struct flow_entry *entry) {$/;"	f	file:
+bands_num	meter_table.h	/^	size_t              bands_num;$/;"	m	struct:meter_table
+bucket_is_alive	group_entry.c	/^bucket_is_alive(struct ofl_bucket *bucket, struct datapath *dp) {$/;"	f	file:
+buckets_num	group_table.h	/^    size_t            buckets_num;$/;"	m	struct:group_table
+buffer	dp_ports.h	/^    struct ofpbuf *buffer;$/;"	m	struct:hw_pkt_q_entry	typeref:struct:hw_pkt_q_entry::ofpbuf
+buffer	packet.h	/^    struct ofpbuf      *buffer;    \/* buffer containing the packet *\/$/;"	m	struct:packet	typeref:struct:packet::ofpbuf
+buffer_id	packet.h	/^    uint32_t            buffer_id; \/* if packet is stored in buffer, buffer_id;$/;"	m	struct:packet
+buffer_idx	dp_buffers.c	/^    size_t                 buffer_idx;$/;"	m	struct:dp_buffers	file:
+buffers	datapath.h	/^    struct dp_buffers *buffers;$/;"	m	struct:datapath	typeref:struct:datapath::dp_buffers
+buffers	dp_buffers.c	/^    struct packet_buffer   buffers[N_PKT_BUFFERS];$/;"	m	struct:dp_buffers	typeref:struct:dp_buffers::packet_buffer	file:
+buffers_num	dp_buffers.c	/^    size_t                 buffers_num;$/;"	m	struct:dp_buffers	file:
+cb_aux	datapath.h	/^    void *cb_aux;$/;"	m	struct:remote
+cb_done	datapath.h	/^    void (*cb_done)(void *aux);$/;"	m	struct:remote
+cb_dump	datapath.h	/^    int (*cb_dump)(struct datapath *, void *aux);$/;"	m	struct:remote
+choose_band	meter_entry.c	/^choose_band(struct meter_entry *entry, struct packet *pkt)$/;"	f	file:
+class_id	dp_ports.h	/^    uint16_t class_id; \/* internal mapping from OF queue_id to tc class_id *\/$/;"	m	struct:sw_queue
+conf	dp_ports.h	/^    struct ofl_port *conf;$/;"	m	struct:sw_port	typeref:struct:sw_port::ofl_port
+config	datapath.h	/^    struct ofl_async_config config;  \/* Asynchronous messages configuration, $/;"	m	struct:remote	typeref:struct:remote::ofl_async_config
+config	datapath.h	/^    struct ofl_config config; \/* Configuration, set from controller. *\/$/;"	m	struct:datapath	typeref:struct:datapath::ofl_config
+config	meter_entry.h	/^	struct ofl_meter_config		*config;		\/* Meter configuration *\/$/;"	m	struct:meter_entry	typeref:struct:meter_entry::ofl_meter_config
+conn_id	datapath.h	/^    uint8_t conn_id;            \/* The connection that sent the message *\/$/;"	m	struct:sender
+consume_tokens	meter_entry.c	/^consume_tokens(struct ofl_meter_band_stats *band, uint16_t meter_flag, struct packet *pkt){$/;"	f	file:
+cookie	dp_buffers.c	/^    uint32_t       cookie;$/;"	m	struct:packet_buffer	file:
+copy_ttl_in	dp_actions.c	/^copy_ttl_in(struct packet *pkt, struct ofl_action_header *act UNUSED) {$/;"	f	file:
+copy_ttl_out	dp_actions.c	/^copy_ttl_out(struct packet *pkt, struct ofl_action_header *act UNUSED) {$/;"	f	file:
+crc32	crc32.h	/^struct crc32 {$/;"	s
+crc32_calculate	crc32.c	/^crc32_calculate(const struct crc32 *crc, const void *data_, size_t n_bytes)$/;"	f
+crc32_init	crc32.c	/^crc32_init(struct crc32 *crc, unsigned int polynomial)$/;"	f
+created	dp_ports.h	/^    uint64_t created;$/;"	m	struct:sw_port
+created	dp_ports.h	/^    uint64_t created;$/;"	m	struct:sw_queue
+created	flow_entry.h	/^    uint64_t                 created;  \/* time the entry was created at. *\/$/;"	m	struct:flow_entry
+created	group_entry.h	/^    uint64_t created;$/;"	m	struct:group_entry
+created	meter_entry.h	/^    uint64_t                    created;  \/* time the entry was created at. *\/$/;"	m	struct:meter_entry
+curr_bucket	group_entry.c	/^    size_t   curr_bucket; \/* bucket executed last time. *\/$/;"	m	struct:group_entry_wrr_data	file:
+curr_weight	group_entry.c	/^    uint16_t curr_weight; \/* current weight in w.r.r. algorithm. *\/$/;"	m	struct:group_entry_wrr_data	file:
+data	group_entry.h	/^    void                        *data;     \/* private data for group implementation. *\/$/;"	m	struct:group_entry
+datapath	datapath.h	/^struct datapath {$/;"	s
+dec_mpls_ttl	dp_actions.c	/^dec_mpls_ttl(struct packet *pkt, struct ofl_action_header *act UNUSED) {$/;"	f	file:
+dec_nw_ttl	dp_actions.c	/^dec_nw_ttl(struct packet *pkt, struct ofl_action_header *act UNUSED) {$/;"	f	file:
+del_group_refs	flow_entry.c	/^del_group_refs(struct flow_entry *entry) {$/;"	f	file:
+del_meter_refs	flow_entry.c	/^del_meter_refs(struct flow_entry *entry) {$/;"	f	file:
+dequeue_pkt	dp_ports.c	/^dequeue_pkt(struct datapath *dp, struct ofpbuf **buffer, of_port_t *port_no,$/;"	f	file:
+desc	group_entry.h	/^    struct ofl_group_desc_stats *desc;$/;"	m	struct:group_entry	typeref:struct:group_entry::ofl_group_desc_stats
+dp	dp_buffers.c	/^    struct datapath       *dp;$/;"	m	struct:dp_buffers	typeref:struct:dp_buffers::datapath	file:
+dp	dp_ports.h	/^    struct datapath *dp;$/;"	m	struct:sw_port	typeref:struct:sw_port::datapath
+dp	flow_entry.h	/^    struct datapath         *dp;$/;"	m	struct:flow_entry	typeref:struct:flow_entry::datapath
+dp	flow_table.h	/^    struct datapath           *dp;$/;"	m	struct:flow_table	typeref:struct:flow_table::datapath
+dp	group_entry.h	/^    struct datapath             *dp;$/;"	m	struct:group_entry	typeref:struct:group_entry::datapath
+dp	group_table.h	/^    struct datapath  *dp;$/;"	m	struct:group_table	typeref:struct:group_table::datapath
+dp	meter_entry.h	/^	struct datapath				*dp;			\/* The datapath *\/$/;"	m	struct:meter_entry	typeref:struct:meter_entry::datapath
+dp	meter_table.h	/^  struct datapath		*dp;				\/* The datapath *\/$/;"	m	struct:meter_table	typeref:struct:meter_table::datapath
+dp	packet.h	/^    struct datapath    *dp;$/;"	m	struct:packet	typeref:struct:packet::datapath
+dp	pipeline.h	/^    struct datapath    *dp;$/;"	m	struct:pipeline	typeref:struct:pipeline::datapath
+dp	udatapath.c	/^static struct datapath *dp;$/;"	v	typeref:struct:datapath	file:
+dp_actions_check_set_field_req	dp_actions.c	/^dp_actions_check_set_field_req(struct ofl_msg_flow_mod *msg, size_t actions_num, struct ofl_action_header **actions){$/;"	f
+dp_actions_list_has_out_group	dp_actions.c	/^dp_actions_list_has_out_group(size_t actions_num, struct ofl_action_header **actions, uint32_t group) {$/;"	f
+dp_actions_list_has_out_port	dp_actions.c	/^dp_actions_list_has_out_port(size_t actions_num, struct ofl_action_header **actions, uint32_t port) {$/;"	f
+dp_actions_output_port	dp_actions.c	/^dp_actions_output_port(struct packet *pkt, uint32_t out_port, uint32_t out_queue, uint16_t max_len, uint64_t cookie) {$/;"	f
+dp_actions_validate	dp_actions.c	/^dp_actions_validate(struct datapath *dp, size_t actions_num, struct ofl_action_header **actions) {$/;"	f
+dp_add_pvconn	datapath.c	/^dp_add_pvconn(struct datapath *dp, struct pvconn *pvconn, struct pvconn *pvconn_aux) {$/;"	f
+dp_buffers	dp_buffers.c	/^struct dp_buffers {$/;"	s	file:
+dp_buffers_create	dp_buffers.c	/^dp_buffers_create(struct datapath *dp) {$/;"	f
+dp_buffers_discard	dp_buffers.c	/^dp_buffers_discard(struct dp_buffers *dpb, uint32_t id, bool destroy) {$/;"	f
+dp_buffers_is_alive	dp_buffers.c	/^dp_buffers_is_alive(struct dp_buffers *dpb, uint32_t id) {$/;"	f
+dp_buffers_retrieve	dp_buffers.c	/^dp_buffers_retrieve(struct dp_buffers *dpb, uint32_t id) {$/;"	f
+dp_buffers_save	dp_buffers.c	/^dp_buffers_save(struct dp_buffers *dpb, struct packet *pkt) {$/;"	f
+dp_buffers_size	dp_buffers.c	/^dp_buffers_size(struct dp_buffers *dpb) {$/;"	f
+dp_check_generation_id	datapath.c	/^dp_check_generation_id(struct datapath *dp, uint64_t new_gen_id){$/;"	f	file:
+dp_desc	datapath.h	/^    char  *dp_desc;$/;"	m	struct:datapath
+dp_execute_action	dp_actions.c	/^dp_execute_action(struct packet *pkt,$/;"	f
+dp_execute_action_list	dp_actions.c	/^dp_execute_action_list(struct packet *pkt,$/;"	f
+dp_exp	datapath.c	/^static struct ofl_exp dp_exp =$/;"	v	typeref:struct:ofl_exp	file:
+dp_exp_action	dp_exp.c	/^dp_exp_action(struct packet * pkt UNUSED, struct ofl_action_experimenter *act) {$/;"	f
+dp_exp_inst	dp_exp.c	/^dp_exp_inst(struct packet *pkt UNUSED, struct ofl_instruction_experimenter *inst) {$/;"	f
+dp_exp_message	dp_exp.c	/^dp_exp_message(struct datapath *dp,$/;"	f
+dp_exp_msg	datapath.c	/^static struct ofl_exp_msg dp_exp_msg =$/;"	v	typeref:struct:ofl_exp_msg	file:
+dp_exp_stats	dp_exp.c	/^dp_exp_stats(struct datapath *dp UNUSED,$/;"	f
+dp_handle_async_request	datapath.c	/^dp_handle_async_request(struct datapath *dp, struct ofl_msg_async_config *msg,$/;"	f
+dp_handle_role_request	datapath.c	/^dp_handle_role_request(struct datapath *dp, struct ofl_msg_role_request *msg,$/;"	f
+dp_handle_set_desc	datapath.c	/^dp_handle_set_desc(struct datapath *dp, struct ofl_exp_openflow_msg_set_dp_desc *msg,$/;"	f
+dp_hw_drv_init	dp_ports.c	/^dp_hw_drv_init(struct datapath *dp)$/;"	f	file:
+dp_new	datapath.c	/^dp_new(void) {$/;"	f
+dp_port_stats_update	dp_ports.c	/^dp_port_stats_update(struct sw_port *port) {$/;"	f	file:
+dp_ports_add	dp_ports.c	/^dp_ports_add(struct datapath *dp, const char *netdev)$/;"	f
+dp_ports_add	dp_ports.c	/^dp_ports_add(struct datapath *dp, const char *port_name)$/;"	f
+dp_ports_add_local	dp_ports.c	/^dp_ports_add_local(struct datapath *dp, const char *netdev)$/;"	f
+dp_ports_handle_port_desc_request	dp_ports.c	/^dp_ports_handle_port_desc_request(struct datapath *dp,$/;"	f
+dp_ports_handle_port_mod	dp_ports.c	/^dp_ports_handle_port_mod(struct datapath *dp, struct ofl_msg_port_mod *msg,$/;"	f
+dp_ports_handle_queue_delete	dp_ports.c	/^dp_ports_handle_queue_delete(struct datapath *dp, struct ofl_exp_openflow_msg_queue *msg,$/;"	f
+dp_ports_handle_queue_get_config_request	dp_ports.c	/^dp_ports_handle_queue_get_config_request(struct datapath *dp,$/;"	f
+dp_ports_handle_queue_modify	dp_ports.c	/^dp_ports_handle_queue_modify(struct datapath *dp, struct ofl_exp_openflow_msg_queue *msg,$/;"	f
+dp_ports_handle_stats_request_port	dp_ports.c	/^dp_ports_handle_stats_request_port(struct datapath *dp,$/;"	f
+dp_ports_handle_stats_request_queue	dp_ports.c	/^dp_ports_handle_stats_request_queue(struct datapath *dp,$/;"	f
+dp_ports_lookup	dp_ports.c	/^dp_ports_lookup(struct datapath *dp, uint32_t port_no) {$/;"	f
+dp_ports_lookup_queue	dp_ports.c	/^dp_ports_lookup_queue(struct sw_port *p, uint32_t queue_id)$/;"	f
+dp_ports_output	dp_ports.c	/^dp_ports_output(struct datapath *dp, struct ofpbuf *buffer, uint32_t out_port,$/;"	f
+dp_ports_output_all	dp_ports.c	/^dp_ports_output_all(struct datapath *dp, struct ofpbuf *buffer, int in_port, bool flood)$/;"	f
+dp_ports_queue_update	dp_ports.c	/^dp_ports_queue_update(struct sw_queue *queue) {$/;"	f	file:
+dp_ports_run	dp_ports.c	/^dp_ports_run(struct datapath *dp) {$/;"	f
+dp_run	datapath.c	/^dp_run(struct datapath *dp) {$/;"	f
+dp_send_message	datapath.c	/^dp_send_message(struct datapath *dp, struct ofl_msg_header *msg,$/;"	f
+dp_set_dp_desc	datapath.c	/^dp_set_dp_desc(struct datapath *dp, char *dp_desc) {$/;"	f
+dp_set_dpid	datapath.c	/^dp_set_dpid(struct datapath *dp, uint64_t dpid) {$/;"	f
+dp_set_hw_desc	datapath.c	/^dp_set_hw_desc(struct datapath *dp, char *hw_desc) {$/;"	f
+dp_set_max_queues	datapath.c	/^dp_set_max_queues(struct datapath *dp, uint32_t max_queues) {$/;"	f
+dp_set_mfr_desc	datapath.c	/^dp_set_mfr_desc(struct datapath *dp, char *mfr_desc) {$/;"	f
+dp_set_serial_num	datapath.c	/^dp_set_serial_num(struct datapath *dp, char *serial_num) {$/;"	f
+dp_set_sw_desc	datapath.c	/^dp_set_sw_desc(struct datapath *dp, char *sw_desc) {$/;"	f
+dp_wait	datapath.c	/^dp_wait(struct datapath *dp)$/;"	f
+enqueue_pkt	dp_ports.c	/^enqueue_pkt(struct datapath *dp, struct ofpbuf *buffer, of_port_t port_no,$/;"	f	file:
+entries	group_table.h	/^    struct hmap       entries;$/;"	m	struct:group_table	typeref:struct:group_table::hmap
+entries_num	group_table.h	/^	size_t            entries_num;$/;"	m	struct:group_table
+entries_num	meter_table.h	/^	size_t				 entries_num;		\/* The number of meters *\/$/;"	m	struct:meter_table
+entry	group_entry.c	/^    struct flow_entry *entry;$/;"	m	struct:flow_ref_entry	typeref:struct:flow_ref_entry::flow_entry	file:
+entry	meter_entry.c	/^    struct flow_entry *entry;$/;"	m	struct:flow_ref_entry	typeref:struct:flow_ref_entry::flow_entry	file:
+execute_all	group_entry.c	/^execute_all(struct group_entry *entry, struct packet *pkt) {$/;"	f	file:
+execute_entry	pipeline.c	/^execute_entry(struct pipeline *pl, struct flow_entry *entry,$/;"	f	file:
+execute_ff	group_entry.c	/^execute_ff(struct group_entry *entry, struct packet *pkt) {$/;"	f	file:
+execute_indirect	group_entry.c	/^execute_indirect(struct group_entry *entry, struct packet *pkt) {$/;"	f	file:
+execute_select	group_entry.c	/^execute_select(struct group_entry *entry, struct packet *pkt) {$/;"	f	file:
+exp	action_set.c	/^    struct ofl_exp *exp;       \/* experimenter callbacks *\/$/;"	m	struct:action_set	typeref:struct:action_set::ofl_exp	file:
+exp	datapath.h	/^    struct ofl_exp  *exp;$/;"	m	struct:datapath	typeref:struct:datapath::ofl_exp
+features	flow_table.h	/^    struct ofl_table_features *features;      \/*store table features*\/$/;"	m	struct:flow_table	typeref:struct:flow_table::ofl_table_features
+features	group_table.h	/^	struct ofl_msg_multipart_reply_group_features *features;   $/;"	m	struct:group_table	typeref:struct:group_table::ofl_msg_multipart_reply_group_features
+features	meter_table.h	/^	struct ofl_meter_features *features;	$/;"	m	struct:meter_table	typeref:struct:meter_table::ofl_meter_features
+flags	dp_ports.h	/^    uint32_t flags;             \/* SWP_* flags above *\/$/;"	m	struct:sw_port
+flow_entry	flow_entry.h	/^struct flow_entry {$/;"	s
+flow_entry_create	flow_entry.c	/^flow_entry_create(struct datapath *dp, struct flow_table *table, struct ofl_msg_flow_mod *mod) {$/;"	f
+flow_entry_destroy	flow_entry.c	/^flow_entry_destroy(struct flow_entry *entry) {$/;"	f
+flow_entry_hard_timeout	flow_entry.c	/^flow_entry_hard_timeout(struct flow_entry *entry) {$/;"	f
+flow_entry_has_out_group	flow_entry.c	/^flow_entry_has_out_group(struct flow_entry *entry, uint32_t group) {$/;"	f
+flow_entry_has_out_port	flow_entry.c	/^flow_entry_has_out_port(struct flow_entry *entry, uint32_t port) {$/;"	f
+flow_entry_idle_timeout	flow_entry.c	/^flow_entry_idle_timeout(struct flow_entry *entry) {$/;"	f
+flow_entry_matches	flow_entry.c	/^flow_entry_matches(struct flow_entry *entry, struct ofl_msg_flow_mod *mod, bool strict, bool check_cookie) {$/;"	f
+flow_entry_overlaps	flow_entry.c	/^flow_entry_overlaps(struct flow_entry *entry, struct ofl_msg_flow_mod *mod) {$/;"	f
+flow_entry_remove	flow_entry.c	/^flow_entry_remove(struct flow_entry *entry, uint8_t reason) {$/;"	f
+flow_entry_replace_instructions	flow_entry.c	/^flow_entry_replace_instructions(struct flow_entry *entry,$/;"	f
+flow_entry_update	flow_entry.c	/^flow_entry_update(struct flow_entry *entry) {$/;"	f
+flow_ref_entry	group_entry.c	/^struct flow_ref_entry {$/;"	s	file:
+flow_ref_entry	meter_entry.c	/^struct flow_ref_entry {$/;"	s	file:
+flow_refs	group_entry.h	/^    struct list                  flow_refs; \/* references to flows referencing the group. *\/$/;"	m	struct:group_entry	typeref:struct:group_entry::list
+flow_refs	meter_entry.h	/^	struct list                 flow_refs;		\/* references to flows referencing the meter. *\/$/;"	m	struct:meter_entry	typeref:struct:meter_entry::list
+flow_table	flow_table.h	/^struct flow_table {$/;"	s
+flow_table_add	flow_table.c	/^flow_table_add(struct flow_table *table, struct ofl_msg_flow_mod *mod, bool check_overlap, bool *match_kept, bool *insts_kept) {$/;"	f	file:
+flow_table_aggregate_stats	flow_table.c	/^flow_table_aggregate_stats(struct flow_table *table, struct ofl_msg_multipart_request_flow *msg,$/;"	f
+flow_table_create	flow_table.c	/^flow_table_create(struct datapath *dp, uint8_t table_id) {$/;"	f
+flow_table_create_property	flow_table.c	/^flow_table_create_property(struct ofl_table_feature_prop_header **prop, enum ofp_table_feature_prop_type type){$/;"	f	file:
+flow_table_delete	flow_table.c	/^flow_table_delete(struct flow_table *table, struct ofl_msg_flow_mod *mod, bool strict) {$/;"	f	file:
+flow_table_destroy	flow_table.c	/^flow_table_destroy(struct flow_table *table) {$/;"	f
+flow_table_features	flow_table.c	/^flow_table_features(struct ofl_table_features *features){$/;"	f	file:
+flow_table_flow_mod	flow_table.c	/^flow_table_flow_mod(struct flow_table *table, struct ofl_msg_flow_mod *mod, bool *match_kept, bool *insts_kept) {$/;"	f
+flow_table_lookup	flow_table.c	/^flow_table_lookup(struct flow_table *table, struct packet *pkt) {$/;"	f
+flow_table_modify	flow_table.c	/^flow_table_modify(struct flow_table *table, struct ofl_msg_flow_mod *mod, bool strict, bool *insts_kept) {$/;"	f	file:
+flow_table_stats	flow_table.c	/^flow_table_stats(struct flow_table *table, struct ofl_msg_multipart_request_flow *msg,$/;"	f
+flow_table_timeout	flow_table.c	/^flow_table_timeout(struct flow_table *table) {$/;"	f
+gcd	group_entry.c	/^gcd(uint16_t a, uint16_t b) {$/;"	f	file:
+gcd_weight	group_entry.c	/^    uint16_t gcd_weight;  \/* g.c.d. of bucket weights. *\/$/;"	m	struct:group_entry_wrr_data	file:
+gen_datapath_id	datapath.c	/^gen_datapath_id(void) {$/;"	f	file:
+generation_id	datapath.h	/^    uint64_t generation_id;     \/* Identifies a given mastership view *\/$/;"	m	struct:datapath
+group	dp_actions.c	/^group(struct packet *pkt, struct ofl_action_group *act) {$/;"	f	file:
+group_entry	group_entry.h	/^struct group_entry {$/;"	s
+group_entry_add_flow_ref	group_entry.c	/^group_entry_add_flow_ref(struct group_entry *entry, struct flow_entry *fe) {$/;"	f
+group_entry_create	group_entry.c	/^group_entry_create(struct datapath *dp, struct group_table *table, struct ofl_msg_group_mod *mod) {$/;"	f
+group_entry_del_flow_ref	group_entry.c	/^group_entry_del_flow_ref(struct group_entry *entry, struct flow_entry *fe) {$/;"	f
+group_entry_destroy	group_entry.c	/^group_entry_destroy(struct group_entry *entry) {$/;"	f
+group_entry_execute	group_entry.c	/^group_entry_execute(struct group_entry *entry,$/;"	f
+group_entry_has_out_group	group_entry.c	/^group_entry_has_out_group(struct group_entry *entry, uint32_t group_id) {$/;"	f
+group_entry_update	group_entry.c	/^group_entry_update(struct group_entry *entry){$/;"	f
+group_entry_wrr_data	group_entry.c	/^struct group_entry_wrr_data {$/;"	s	file:
+group_id	flow_entry.c	/^    uint32_t      group_id;$/;"	m	struct:group_ref_entry	file:
+group_id	group_table.c	/^	uint32_t      group_id;$/;"	m	struct:group_visit	file:
+group_ref_entry	flow_entry.c	/^struct group_ref_entry {$/;"	s	file:
+group_refs	flow_entry.h	/^    struct list              group_refs;  \/* list of groups referencing the flow. *\/$/;"	m	struct:flow_entry	typeref:struct:flow_entry::list
+group_table	group_table.h	/^struct group_table {$/;"	s
+group_table_add	group_table.c	/^group_table_add(struct group_table *table, struct ofl_msg_group_mod *mod) {$/;"	f	file:
+group_table_create	group_table.c	/^group_table_create(struct datapath *dp) {$/;"	f
+group_table_delete	group_table.c	/^group_table_delete(struct group_table *table, struct ofl_msg_group_mod *mod) {$/;"	f	file:
+group_table_destroy	group_table.c	/^group_table_destroy(struct group_table *table) {$/;"	f
+group_table_execute	group_table.c	/^group_table_execute(struct group_table *table, struct packet *packet, uint32_t group_id) {$/;"	f
+group_table_find	group_table.c	/^group_table_find(struct group_table *table, uint32_t group_id) {$/;"	f
+group_table_handle_group_mod	group_table.c	/^group_table_handle_group_mod(struct group_table *table, struct ofl_msg_group_mod *mod,$/;"	f
+group_table_handle_stats_request_group	group_table.c	/^group_table_handle_stats_request_group(struct group_table *table,$/;"	f
+group_table_handle_stats_request_group_desc	group_table.c	/^group_table_handle_stats_request_group_desc(struct group_table *table,$/;"	f
+group_table_handle_stats_request_group_features	group_table.c	/^group_table_handle_stats_request_group_features(struct group_table *table,$/;"	f
+group_table_modify	group_table.c	/^group_table_modify(struct group_table *table, struct ofl_msg_group_mod *mod) {$/;"	f	file:
+group_visit	group_table.c	/^struct group_visit {$/;"	s	file:
+groups	datapath.h	/^    struct group_table *groups; \/* Group tables *\/$/;"	m	struct:datapath	typeref:struct:datapath::group_table
+handle_control_barrier_request	dp_control.c	/^handle_control_barrier_request(struct datapath *dp,$/;"	f	file:
+handle_control_echo_reply	dp_control.c	/^handle_control_echo_reply(struct datapath *dp UNUSED,$/;"	f	file:
+handle_control_echo_request	dp_control.c	/^handle_control_echo_request(struct datapath *dp,$/;"	f	file:
+handle_control_features_request	dp_control.c	/^handle_control_features_request(struct datapath *dp,$/;"	f	file:
+handle_control_get_config_request	dp_control.c	/^handle_control_get_config_request(struct datapath *dp,$/;"	f	file:
+handle_control_msg	dp_control.c	/^handle_control_msg(struct datapath *dp, struct ofl_msg_header *msg,$/;"	f
+handle_control_packet_out	dp_control.c	/^handle_control_packet_out(struct datapath *dp, struct ofl_msg_packet_out *msg,$/;"	f	file:
+handle_control_set_config	dp_control.c	/^handle_control_set_config(struct datapath *dp, struct ofl_msg_set_config *msg,$/;"	f	file:
+handle_control_stats_request	dp_control.c	/^handle_control_stats_request(struct datapath *dp,$/;"	f	file:
+handle_control_stats_request_desc	dp_control.c	/^handle_control_stats_request_desc(struct datapath *dp,$/;"	f	file:
+handle_std	packet.h	/^    struct packet_handle_std  *handle_std; \/* handler for standard match structure *\/$/;"	m	struct:packet	typeref:struct:packet::packet_handle_std
+hard_entries	flow_table.h	/^    struct list               hard_entries;   \/* list of entries with hard timeout;$/;"	m	struct:flow_table	typeref:struct:flow_table::list
+hard_node	flow_entry.h	/^    struct list              hard_node;$/;"	m	struct:flow_entry	typeref:struct:flow_entry::list
+has_flow_ref	group_entry.c	/^has_flow_ref(struct group_entry *entry, struct flow_entry *fe) {$/;"	f	file:
+has_flow_ref	meter_entry.c	/^has_flow_ref(struct meter_entry *entry, struct flow_entry *fe) {$/;"	f	file:
+has_group_ref	flow_entry.c	/^has_group_ref(struct flow_entry *entry, uint32_t group_id) {$/;"	f	file:
+has_meter_ref	flow_entry.c	/^has_meter_ref(struct flow_entry *entry, uint32_t meter_id) {$/;"	f	file:
+hw_desc	datapath.h	/^    char  *hw_desc;$/;"	m	struct:datapath
+hw_drv	datapath.h	/^    of_hw_driver_t *hw_drv;$/;"	m	struct:datapath
+hw_packet_in	dp_ports.c	/^hw_packet_in(of_port_t port_no, of_packet_t *packet, int reason,$/;"	f	file:
+hw_pkt_list_head	datapath.h	/^    struct hw_pkt_q_entry *hw_pkt_list_head, *hw_pkt_list_tail;$/;"	m	struct:datapath	typeref:struct:datapath::hw_pkt_q_entry
+hw_pkt_list_tail	datapath.h	/^    struct hw_pkt_q_entry *hw_pkt_list_head, *hw_pkt_list_tail;$/;"	m	struct:datapath	typeref:struct:datapath::
+hw_pkt_q_entry	dp_ports.h	/^struct hw_pkt_q_entry {$/;"	s
+id	datapath.h	/^    uint64_t  id;               \/* Unique identifier for this datapath. *\/$/;"	m	struct:datapath
+idle_entries	flow_table.h	/^    struct list               idle_entries;   \/* unordered list of entries with$/;"	m	struct:flow_table	typeref:struct:flow_table::list
+idle_node	flow_entry.h	/^    struct list              idle_node;$/;"	m	struct:flow_entry	typeref:struct:flow_entry::list
+in_port	packet.h	/^    uint32_t            in_port;$/;"	m	struct:packet
+incompatible_128	match_std.c	/^incompatible_128(uint8_t *a, uint8_t *b, uint8_t *am, uint8_t *bm) {$/;"	f	file:
+incompatible_16	match_std.c	/^incompatible_16(uint8_t *a, uint8_t *b, uint8_t *am, uint8_t *bm) {$/;"	f	file:
+incompatible_32	match_std.c	/^incompatible_32(uint8_t *a, uint8_t *b, uint8_t *am, uint8_t *bm) {$/;"	f	file:
+incompatible_48	match_std.c	/^incompatible_48(uint8_t *a, uint8_t *b, uint8_t *am, uint8_t *bm) {$/;"	f	file:
+incompatible_64	match_std.c	/^incompatible_64(uint8_t *a, uint8_t *b, uint8_t *am, uint8_t *bm) {$/;"	f	file:
+incompatible_8	match_std.c	/^incompatible_8(uint8_t *a, uint8_t *b, uint8_t *am, uint8_t *bm) {$/;"	f	file:
+init_group_refs	flow_entry.c	/^init_group_refs(struct flow_entry *entry) {$/;"	f	file:
+init_meter_refs	flow_entry.c	/^init_meter_refs(struct flow_entry *entry) {$/;"	f	file:
+init_select_group	group_entry.c	/^init_select_group(struct group_entry *entry, struct ofl_msg_group_mod *mod) {$/;"	f	file:
+inst_compare	pipeline.c	/^int inst_compare(const void *inst1, const void *inst2){$/;"	f	file:
+instructions	flow_table.c	/^struct ofl_instruction_header instructions[] = { {OFPIT_GOTO_TABLE}, $/;"	v	typeref:struct:ofl_instruction_header
+is_in	group_table.c	/^is_in(uint32_t id, struct list *list) {$/;"	f	file:
+is_loop_free	group_table.c	/^is_loop_free(struct group_table *table, struct ofl_msg_group_mod *mod) {$/;"	f	file:
+is_loop_free_visit	group_table.c	/^is_loop_free_visit(struct ofl_bucket **buckets, size_t buckets_num, struct list *visited, struct list *to_be_visited) {$/;"	f	file:
+is_table_miss	pipeline.c	/^is_table_miss(struct flow_entry *entry){$/;"	f	file:
+last_timeout	datapath.h	/^    time_t last_timeout;$/;"	m	struct:datapath
+last_used	flow_entry.h	/^    uint64_t                 last_used; \/* last time the flow entry matched a packet *\/$/;"	m	struct:flow_entry
+listeners	datapath.h	/^    struct pvconn **listeners;$/;"	m	struct:datapath	typeref:struct:datapath::pvconn
+listeners_aux	datapath.h	/^    struct pvconn **listeners_aux;$/;"	m	struct:datapath	typeref:struct:datapath::pvconn
+local_port	datapath.h	/^    struct sw_port  *local_port;  \/* OFPP_LOCAL port, if any. *\/$/;"	m	struct:datapath	typeref:struct:datapath::sw_port
+local_port	udatapath.c	/^static char *local_port = "tap:";$/;"	v	file:
+main	udatapath.c	/^main(int argc, char *argv[])$/;"	f
+match	flow_entry.h	/^    struct ofl_match_header *match; \/* Original match structure is stored in stats;$/;"	m	struct:flow_entry	typeref:struct:flow_entry::ofl_match_header
+match	packet_handle_std.h	/^   struct ofl_match  match;  \/* Match fields extracted from the packet$/;"	m	struct:packet_handle_std	typeref:struct:packet_handle_std::ofl_match
+match_128	match_std.c	/^match_128(uint8_t *a, uint8_t *b) {$/;"	f	file:
+match_16	match_std.c	/^match_16(uint8_t *a, uint8_t *b) {$/;"	f	file:
+match_32	match_std.c	/^match_32(uint8_t *a, uint8_t *b) {$/;"	f	file:
+match_48	match_std.c	/^match_48(uint8_t *a, uint8_t *b) {$/;"	f	file:
+match_64	match_std.c	/^match_64(uint8_t *a, uint8_t *b) {$/;"	f	file:
+match_8	match_std.c	/^match_8(uint8_t *a, uint8_t *b) {$/;"	f	file:
+match_entries	flow_table.h	/^    struct list               match_entries;  \/* list of entries in order. *\/$/;"	m	struct:flow_table	typeref:struct:flow_table::list
+match_mask128	match_std.c	/^match_mask128(uint8_t *a, uint8_t *am, uint8_t *b) {$/;"	f	file:
+match_mask16	match_std.c	/^match_mask16(uint8_t *a, uint8_t *am, uint8_t *b) {$/;"	f	file:
+match_mask32	match_std.c	/^match_mask32(uint8_t *a, uint8_t *am, uint8_t *b) {$/;"	f	file:
+match_mask48	match_std.c	/^match_mask48(uint8_t *a, uint8_t *am, uint8_t *b) {$/;"	f	file:
+match_mask64	match_std.c	/^match_mask64(uint8_t *a, uint8_t *am, uint8_t *b) {$/;"	f	file:
+match_mask8	match_std.c	/^match_mask8(uint8_t *a, uint8_t *am, uint8_t *b) {$/;"	f	file:
+match_node	flow_entry.h	/^    struct list              match_node;  \/* list nodes in flow table lists. *\/$/;"	m	struct:flow_entry	typeref:struct:flow_entry::list
+match_std_nonstrict	match_std.c	/^match_std_nonstrict(struct ofl_match *a, struct ofl_match *b)$/;"	f
+match_std_overlap	match_std.c	/^match_std_overlap(struct ofl_match *a, struct ofl_match *b)$/;"	f
+match_std_strict	match_std.c	/^match_std_strict(struct ofl_match *a, struct ofl_match *b) {$/;"	f
+max_queues	datapath.h	/^    uint32_t         max_queues; \/* used when creating ports *\/$/;"	m	struct:datapath
+max_queues	dp_ports.h	/^    uint16_t max_queues;$/;"	m	struct:sw_port
+max_weight	group_entry.c	/^    uint16_t max_weight;  \/* maximum weight of the buckets. *\/$/;"	m	struct:group_entry_wrr_data	file:
+meter_entries	meter_table.h	/^  struct hmap			meter_entries;	    \/* Meter entries *\/$/;"	m	struct:meter_table	typeref:struct:meter_table::hmap
+meter_entry	meter_entry.h	/^struct meter_entry {$/;"	s
+meter_entry_add_flow_ref	meter_entry.c	/^meter_entry_add_flow_ref(struct meter_entry *entry, struct flow_entry *fe) {$/;"	f
+meter_entry_apply	meter_entry.c	/^meter_entry_apply(struct meter_entry *entry, struct packet **pkt){$/;"	f
+meter_entry_create	meter_entry.c	/^meter_entry_create(struct datapath *dp, struct meter_table *table, struct ofl_msg_meter_mod *mod) {$/;"	f
+meter_entry_del_flow_ref	meter_entry.c	/^meter_entry_del_flow_ref(struct meter_entry *entry, struct flow_entry *fe) {$/;"	f
+meter_entry_destroy	meter_entry.c	/^meter_entry_destroy(struct meter_entry *entry) {$/;"	f
+meter_entry_update	meter_entry.c	/^meter_entry_update(struct meter_entry *entry) {$/;"	f
+meter_id	flow_entry.c	/^    uint32_t      meter_id;$/;"	m	struct:meter_ref_entry	file:
+meter_ref_entry	flow_entry.c	/^struct meter_ref_entry {$/;"	s	file:
+meter_refs	flow_entry.h	/^    struct list              meter_refs;  \/* list of meters referencing the flow. *\/$/;"	m	struct:flow_entry	typeref:struct:flow_entry::list
+meter_table	meter_table.h	/^struct meter_table {$/;"	s
+meter_table_add	meter_table.c	/^meter_table_add(struct meter_table *table, struct ofl_msg_meter_mod *mod) {$/;"	f	file:
+meter_table_add_tokens	meter_table.c	/^meter_table_add_tokens(struct meter_table *table){$/;"	f
+meter_table_apply	meter_table.c	/^meter_table_apply(struct meter_table *table, struct packet **packet, uint32_t meter_id) {$/;"	f
+meter_table_create	meter_table.c	/^meter_table_create(struct datapath *dp) {$/;"	f
+meter_table_delete	meter_table.c	/^meter_table_delete(struct meter_table *table, struct ofl_msg_meter_mod *mod) {$/;"	f	file:
+meter_table_destroy	meter_table.c	/^meter_table_destroy(struct meter_table *table) {$/;"	f
+meter_table_find	meter_table.c	/^meter_table_find(struct meter_table *table, uint32_t meter_id) {$/;"	f
+meter_table_handle_features_request	meter_table.c	/^meter_table_handle_features_request(struct meter_table *table,$/;"	f
+meter_table_handle_meter_mod	meter_table.c	/^meter_table_handle_meter_mod(struct meter_table *table, struct ofl_msg_meter_mod *mod,$/;"	f
+meter_table_handle_stats_request_meter	meter_table.c	/^meter_table_handle_stats_request_meter(struct meter_table *table,$/;"	f
+meter_table_handle_stats_request_meter_conf	meter_table.c	/^meter_table_handle_stats_request_meter_conf(struct meter_table *table,$/;"	f
+meter_table_modify	meter_table.c	/^meter_table_modify(struct meter_table *table, struct ofl_msg_meter_mod *mod) {$/;"	f	file:
+meters	datapath.h	/^    struct meter_table *meters; \/* Meter tables *\/$/;"	m	struct:datapath	typeref:struct:datapath::meter_table
+mfr_desc	datapath.h	/^    char  *mfr_desc;$/;"	m	struct:datapath
+n_listeners	datapath.h	/^    size_t n_listeners;$/;"	m	struct:datapath
+n_listeners_aux	datapath.h	/^    size_t n_listeners_aux;$/;"	m	struct:datapath
+n_txq	datapath.h	/^    int n_txq;                  \/* Number of packets queued for tx on rconn. *\/$/;"	m	struct:remote
+netdev	dp_ports.h	/^    struct netdev *netdev;$/;"	m	struct:sw_port	typeref:struct:sw_port::netdev
+new_port	dp_ports.c	/^new_port(struct datapath *dp, struct sw_port *port, uint32_t port_no,$/;"	f	file:
+new_queue	dp_ports.c	/^new_queue(struct sw_port * port, struct sw_queue * queue,$/;"	f	file:
+next	dp_ports.h	/^    struct hw_pkt_q_entry *next;$/;"	m	struct:hw_pkt_q_entry	typeref:struct:hw_pkt_q_entry::hw_pkt_q_entry
+no_byt_count	flow_entry.h	/^    bool                     no_byt_count; \/* true if doesn't keep track of flow matched bytes*\/$/;"	m	struct:flow_entry
+no_pkt_count	flow_entry.h	/^    bool                     no_pkt_count; \/* true if doesn't keep track of flow matched packets*\/     $/;"	m	struct:flow_entry
+node	action_set.c	/^    struct list                node;$/;"	m	struct:action_set_entry	typeref:struct:action_set_entry::list	file:
+node	datapath.h	/^    struct list node;$/;"	m	struct:remote	typeref:struct:remote::list
+node	dp_ports.h	/^    struct list node; \/* Element in datapath.ports. *\/$/;"	m	struct:sw_port	typeref:struct:sw_port::list
+node	flow_entry.c	/^    struct list   node;$/;"	m	struct:group_ref_entry	typeref:struct:group_ref_entry::list	file:
+node	flow_entry.c	/^    struct list   node;$/;"	m	struct:meter_ref_entry	typeref:struct:meter_ref_entry::list	file:
+node	group_entry.c	/^    struct list node;$/;"	m	struct:flow_ref_entry	typeref:struct:flow_ref_entry::list	file:
+node	group_entry.h	/^    struct hmap_node             node;$/;"	m	struct:group_entry	typeref:struct:group_entry::hmap_node
+node	group_table.c	/^	struct list   node;$/;"	m	struct:group_visit	typeref:struct:group_visit::list	file:
+node	meter_entry.c	/^    struct list node;$/;"	m	struct:flow_ref_entry	typeref:struct:flow_ref_entry::list	file:
+node	meter_entry.h	/^	struct hmap_node            node;			\/* Refered by the meter table *\/$/;"	m	struct:meter_entry	typeref:struct:meter_entry::hmap_node
+nodist_EXTRA_udatapath_ofdatapath_SOURCES	automake.mk	/^nodist_EXTRA_udatapath_ofdatapath_SOURCES = dummy.cxx$/;"	m
+nonstrict_mask128	match_std.c	/^nonstrict_mask128(uint8_t *a, uint8_t *b, uint8_t *am, uint8_t *bm) {$/;"	f	file:
+nonstrict_mask16	match_std.c	/^nonstrict_mask16(uint8_t *a, uint8_t *b, uint8_t *am, uint8_t *bm) {$/;"	f	file:
+nonstrict_mask32	match_std.c	/^nonstrict_mask32(uint8_t *a, uint8_t *b, uint8_t *am, uint8_t *bm) {$/;"	f	file:
+nonstrict_mask48	match_std.c	/^nonstrict_mask48(uint8_t *a, uint8_t *b, uint8_t *am, uint8_t *bm) {$/;"	f	file:
+nonstrict_mask64	match_std.c	/^nonstrict_mask64(uint8_t *a, uint8_t *b, uint8_t *am, uint8_t *bm) {$/;"	f	file:
+nonstrict_mask8	match_std.c	/^nonstrict_mask8(uint8_t *a, uint8_t *b, uint8_t *am, uint8_t *bm) {$/;"	f	file:
+num_queues	dp_ports.h	/^    uint16_t num_queues;$/;"	m	struct:sw_port
+order	action_set.c	/^    int                        order;   \/* order of the entry as defined *\/$/;"	m	struct:action_set_entry	file:
+out_group	packet.h	/^    uint32_t            out_group; \/* OFPG_ANY = no out group *\/$/;"	m	struct:packet
+out_port	packet.h	/^    uint32_t            out_port;  \/* OFPP_ANY = no out port *\/$/;"	m	struct:packet
+out_port_max_len	packet.h	/^    uint16_t            out_port_max_len;  \/* max length to send, if out_port is OFPP_CONTROLLER *\/$/;"	m	struct:packet
+out_queue	packet.h	/^    uint32_t            out_queue;$/;"	m	struct:packet
+output	dp_actions.c	/^output(struct packet *pkt, struct ofl_action_output *action) {$/;"	f	file:
+oxm_ids	flow_table.c	/^uint32_t  oxm_ids[]={OXM_OF_IN_PORT,OXM_OF_IN_PHY_PORT,OXM_OF_METADATA,OXM_OF_ETH_DST,$/;"	v
+packet	packet.h	/^struct packet {$/;"	s
+packet_buffer	dp_buffers.c	/^struct packet_buffer {$/;"	s	file:
+packet_clone	packet.c	/^packet_clone(struct packet *pkt) {$/;"	f
+packet_create	packet.c	/^packet_create(struct datapath *dp, uint32_t in_port,$/;"	f
+packet_destroy	packet.c	/^packet_destroy(struct packet *pkt) {$/;"	f
+packet_handle_std	packet_handle_std.h	/^struct packet_handle_std {$/;"	s
+packet_handle_std_clone	packet_handle_std.c	/^packet_handle_std_clone(struct packet *pkt, struct packet_handle_std *handle UNUSED) {$/;"	f
+packet_handle_std_create	packet_handle_std.c	/^packet_handle_std_create(struct packet *pkt) {$/;"	f
+packet_handle_std_destroy	packet_handle_std.c	/^packet_handle_std_destroy(struct packet_handle_std *handle) {$/;"	f
+packet_handle_std_is_fragment	packet_handle_std.c	/^packet_handle_std_is_fragment(struct packet_handle_std *handle) {$/;"	f
+packet_handle_std_is_ttl_valid	packet_handle_std.c	/^packet_handle_std_is_ttl_valid(struct packet_handle_std *handle) {$/;"	f
+packet_handle_std_match	packet_handle_std.c	/^packet_handle_std_match(struct packet_handle_std *handle, struct ofl_match *match){$/;"	f
+packet_handle_std_print	packet_handle_std.c	/^packet_handle_std_print(FILE *stream, struct packet_handle_std *handle) {$/;"	f
+packet_handle_std_to_string	packet_handle_std.c	/^packet_handle_std_to_string(struct packet_handle_std *handle) {$/;"	f
+packet_handle_std_validate	packet_handle_std.c	/^packet_handle_std_validate(struct packet_handle_std *handle) {$/;"	f
+packet_match	match_std.c	/^packet_match(struct ofl_match *flow_match, struct ofl_match *packet){$/;"	f
+packet_out	packet.h	/^    bool                packet_out; \/* true if the packet arrived in a packet out msg *\/$/;"	m	struct:packet
+packet_to_string	packet.c	/^packet_to_string(struct packet *pkt) {$/;"	f
+parse_options	udatapath.c	/^parse_options(struct datapath *dp, int argc, char *argv[])$/;"	f	file:
+pipeline	datapath.h	/^    struct pipeline *pipeline;  \/* Pipeline with multi-tables. *\/$/;"	m	struct:datapath	typeref:struct:datapath::pipeline
+pipeline	pipeline.h	/^struct pipeline {$/;"	s
+pipeline_create	pipeline.c	/^pipeline_create(struct datapath *dp) {$/;"	f
+pipeline_destroy	pipeline.c	/^pipeline_destroy(struct pipeline *pl) {$/;"	f
+pipeline_handle_flow_mod	pipeline.c	/^pipeline_handle_flow_mod(struct pipeline *pl, struct ofl_msg_flow_mod *msg,$/;"	f
+pipeline_handle_stats_request_aggregate	pipeline.c	/^pipeline_handle_stats_request_aggregate(struct pipeline *pl,$/;"	f
+pipeline_handle_stats_request_flow	pipeline.c	/^pipeline_handle_stats_request_flow(struct pipeline *pl,$/;"	f
+pipeline_handle_stats_request_table	pipeline.c	/^pipeline_handle_stats_request_table(struct pipeline *pl,$/;"	f
+pipeline_handle_stats_request_table_features_request	pipeline.c	/^pipeline_handle_stats_request_table_features_request(struct pipeline *pl,$/;"	f
+pipeline_handle_table_mod	pipeline.c	/^pipeline_handle_table_mod(struct pipeline *pl,$/;"	f
+pipeline_process_packet	pipeline.c	/^pipeline_process_packet(struct pipeline *pl, struct packet *pkt) {$/;"	f
+pipeline_timeout	pipeline.c	/^pipeline_timeout(struct pipeline *pl) {$/;"	f
+pkt	dp_buffers.c	/^    struct packet *pkt;$/;"	m	struct:packet_buffer	typeref:struct:packet_buffer::packet	file:
+pkt	packet_handle_std.h	/^   struct packet              *pkt;$/;"	m	struct:packet_handle_std	typeref:struct:packet_handle_std::packet
+pkt_q_mutex	dp_ports.c	/^static pthread_mutex_t pkt_q_mutex = PTHREAD_MUTEX_INITIALIZER;$/;"	v	file:
+pop_mpls	dp_actions.c	/^pop_mpls(struct packet *pkt, struct ofl_action_pop_mpls *act) {$/;"	f	file:
+pop_pbb	dp_actions.c	/^pop_pbb(struct packet *pkt, struct ofl_action_header *act UNUSED) {$/;"	f	file:
+pop_vlan	dp_actions.c	/^pop_vlan(struct packet *pkt, struct ofl_action_header *act UNUSED) {$/;"	f	file:
+port	dp_ports.h	/^    struct sw_port *port; \/* reference to the parent port *\/$/;"	m	struct:sw_queue	typeref:struct:sw_queue::sw_port
+port_add_queue	dp_ports.c	/^port_add_queue(struct sw_port *p, uint32_t queue_id,$/;"	f	file:
+port_delete_queue	dp_ports.c	/^port_delete_queue(struct sw_port *p, struct sw_queue *q)$/;"	f	file:
+port_list	datapath.h	/^    struct list      port_list; \/* All ports, including local_port. *\/$/;"	m	struct:datapath	typeref:struct:datapath::list
+port_list	udatapath.c	/^static char *port_list;$/;"	v	file:
+port_no	dp_ports.h	/^    of_port_t port_no;$/;"	m	struct:hw_pkt_q_entry
+port_speed	dp_ports.c	/^static uint32_t port_speed(uint32_t conf) {$/;"	f	file:
+ports	datapath.h	/^    struct sw_port   ports[DP_MAX_PORTS + 1];$/;"	m	struct:datapath	typeref:struct:datapath::sw_port
+ports_num	datapath.h	/^    size_t           ports_num;$/;"	m	struct:datapath
+process_buffer	dp_ports.c	/^process_buffer(struct datapath *dp, struct sw_port *p, struct ofpbuf *buffer) {$/;"	f	file:
+props	dp_ports.h	/^    struct ofl_packet_queue *props;$/;"	m	struct:sw_queue	typeref:struct:sw_queue::ofl_packet_queue
+proto	packet_handle_std.h	/^   struct protocols_std       *proto;$/;"	m	struct:packet_handle_std	typeref:struct:packet_handle_std::protocols_std
+proto_print	packet_handle_std.c	/^proto_print(FILE *stream, struct protocols_std *p) {$/;"	f	file:
+pstr	packet_handle_std.c	/^pstr(void *ptr, const char *str) {$/;"	f	file:
+push_mpls	dp_actions.c	/^push_mpls(struct packet *pkt, struct ofl_action_push *act) {$/;"	f	file:
+push_pbb	dp_actions.c	/^push_pbb(struct packet *pkt, struct ofl_action_push *act) {$/;"	f	file:
+push_vlan	dp_actions.c	/^push_vlan(struct packet *pkt, struct ofl_action_push *act) {$/;"	f	file:
+queues	dp_ports.h	/^    struct sw_queue queues[NETDEV_MAX_QUEUES];$/;"	m	struct:sw_port	typeref:struct:sw_port::sw_queue
+rconn	datapath.h	/^    struct rconn *rconn;$/;"	m	struct:remote	typeref:struct:remote::rconn
+rconn_aux	datapath.h	/^    struct rconn *rconn_aux;$/;"	m	struct:remote	typeref:struct:remote::rconn
+reason	dp_ports.h	/^    int reason;$/;"	m	struct:hw_pkt_q_entry
+refill_bucket	meter_entry.c	/^refill_bucket(struct meter_entry *entry)$/;"	f
+remote	datapath.h	/^    struct remote *remote;      \/* The device that sent the message. *\/$/;"	m	struct:sender	typeref:struct:sender::remote
+remote	datapath.h	/^struct remote {$/;"	s
+remote_create	datapath.c	/^remote_create(struct datapath *dp, struct rconn *rconn, struct rconn *rconn_aux)$/;"	f	file:
+remote_destroy	datapath.c	/^remote_destroy(struct remote *r)$/;"	f	file:
+remote_rconn_run	datapath.c	/^remote_rconn_run(struct datapath *dp, struct remote *r, uint8_t conn_id) {$/;"	f	file:
+remote_run	datapath.c	/^remote_run(struct datapath *dp, struct remote *r)$/;"	f	file:
+remote_wait	datapath.c	/^remote_wait(struct remote *r)$/;"	f	file:
+remotes	datapath.h	/^    struct list remotes;        \/* Remote connections. *\/$/;"	m	struct:datapath	typeref:struct:datapath::list
+remove_at	flow_entry.h	/^    uint64_t                 remove_at; \/* time the entry should be removed at$/;"	m	struct:flow_entry
+rl	action_set.c	/^static struct vlog_rate_limit rl = VLOG_RATE_LIMIT_INIT(60, 60);$/;"	v	typeref:struct:vlog_rate_limit	file:
+rl	datapath.c	/^static struct vlog_rate_limit rl = VLOG_RATE_LIMIT_INIT(60, 60);$/;"	v	typeref:struct:vlog_rate_limit	file:
+rl	dp_actions.c	/^static struct vlog_rate_limit rl = VLOG_RATE_LIMIT_INIT(60, 60);$/;"	v	typeref:struct:vlog_rate_limit	file:
+rl	dp_buffers.c	/^static struct vlog_rate_limit rl = VLOG_RATE_LIMIT_INIT(60, 60);$/;"	v	typeref:struct:vlog_rate_limit	file:
+rl	dp_control.c	/^static struct vlog_rate_limit rl = VLOG_RATE_LIMIT_INIT(60, 60);$/;"	v	typeref:struct:vlog_rate_limit	file:
+rl	dp_exp.c	/^static struct vlog_rate_limit rl = VLOG_RATE_LIMIT_INIT(60, 60);$/;"	v	typeref:struct:vlog_rate_limit	file:
+rl	dp_ports.c	/^static struct vlog_rate_limit rl = VLOG_RATE_LIMIT_INIT(60, 60);$/;"	v	typeref:struct:vlog_rate_limit	file:
+rl	flow_entry.c	/^static struct vlog_rate_limit rl = VLOG_RATE_LIMIT_INIT(60, 60);$/;"	v	typeref:struct:vlog_rate_limit	file:
+rl	flow_table.c	/^static struct vlog_rate_limit rl = VLOG_RATE_LIMIT_INIT(60, 60);$/;"	v	typeref:struct:vlog_rate_limit	file:
+rl	group_entry.c	/^static struct vlog_rate_limit rl = VLOG_RATE_LIMIT_INIT(60, 60);$/;"	v	typeref:struct:vlog_rate_limit	file:
+rl	group_table.c	/^static struct vlog_rate_limit rl = VLOG_RATE_LIMIT_INIT(60, 60);$/;"	v	typeref:struct:vlog_rate_limit	file:
+rl	meter_entry.c	/^static struct vlog_rate_limit rl = VLOG_RATE_LIMIT_INIT(60, 60);$/;"	v	typeref:struct:vlog_rate_limit	file:
+rl	meter_table.c	/^static struct vlog_rate_limit rl = VLOG_RATE_LIMIT_INIT(60, 60);$/;"	v	typeref:struct:vlog_rate_limit	file:
+rl	pipeline.c	/^static struct vlog_rate_limit rl = VLOG_RATE_LIMIT_INIT(60, 60);$/;"	v	typeref:struct:vlog_rate_limit	file:
+role	datapath.h	/^    uint32_t role; \/*OpenFlow controller role.*\/$/;"	m	struct:remote
+select_from_ff_group	group_entry.c	/^select_from_ff_group(struct group_entry *entry) {$/;"	f	file:
+select_from_select_group	group_entry.c	/^select_from_select_group(struct group_entry *entry) {$/;"	f	file:
+send_openflow_buffer	datapath.c	/^send_openflow_buffer(struct datapath *dp, struct ofpbuf *buffer,$/;"	f	file:
+send_openflow_buffer_to_remote	datapath.c	/^send_openflow_buffer_to_remote(struct ofpbuf *buffer, struct remote *remote) {$/;"	f	file:
+send_packet_to_controller	pipeline.c	/^send_packet_to_controller(struct pipeline *pl, struct packet *pkt, uint8_t table_id, uint8_t reason) {$/;"	f	file:
+send_removed	flow_entry.h	/^    bool                     send_removed; \/* true if a flow removed should be sent$/;"	m	struct:flow_entry
+sender	datapath.h	/^struct sender {$/;"	s
+serial_num	datapath.h	/^    char  *serial_num;$/;"	m	struct:datapath
+set_field	dp_actions.c	/^set_field(struct packet *pkt, struct ofl_action_set_field *act )$/;"	f	file:
+set_mpls_ttl	dp_actions.c	/^set_mpls_ttl(struct packet *pkt, struct ofl_action_mpls_ttl *act) {$/;"	f	file:
+set_nw_ttl	dp_actions.c	/^set_nw_ttl(struct packet *pkt, struct ofl_action_set_nw_ttl *act) {$/;"	f	file:
+set_queue	dp_actions.c	/^set_queue(struct packet *pkt UNUSED, struct ofl_action_set_queue *act) {$/;"	f	file:
+stats	dp_ports.h	/^    struct ofl_port_stats *stats;$/;"	m	struct:sw_port	typeref:struct:sw_port::ofl_port_stats
+stats	dp_ports.h	/^    struct ofl_queue_stats *stats;$/;"	m	struct:sw_queue	typeref:struct:sw_queue::ofl_queue_stats
+stats	flow_entry.h	/^    struct ofl_flow_stats   *stats;$/;"	m	struct:flow_entry	typeref:struct:flow_entry::ofl_flow_stats
+stats	flow_table.h	/^    struct ofl_table_stats    *stats;         \/* structure storing table statistics. *\/$/;"	m	struct:flow_table	typeref:struct:flow_table::ofl_table_stats
+stats	group_entry.h	/^    struct ofl_group_stats      *stats;$/;"	m	struct:group_entry	typeref:struct:group_entry::ofl_group_stats
+stats	meter_entry.h	/^	struct ofl_meter_stats		*stats;			\/* Meter statistics *\/$/;"	m	struct:meter_entry	typeref:struct:meter_entry::ofl_meter_stats
+strict_mask128	match_std.c	/^strict_mask128(uint8_t *a, uint8_t *b, uint8_t *am, uint8_t *bm) {$/;"	f	file:
+strict_mask16	match_std.c	/^strict_mask16(uint8_t *a, uint8_t *b, uint8_t *am, uint8_t *bm) {$/;"	f	file:
+strict_mask32	match_std.c	/^strict_mask32(uint8_t *a, uint8_t *b, uint8_t *am, uint8_t *bm) {$/;"	f	file:
+strict_mask48	match_std.c	/^strict_mask48(uint8_t *a, uint8_t *b, uint8_t *am, uint8_t *bm) {$/;"	f	file:
+strict_mask64	match_std.c	/^strict_mask64(uint8_t *a, uint8_t *b, uint8_t *am, uint8_t *bm) {$/;"	f	file:
+strict_mask8	match_std.c	/^strict_mask8(uint8_t *a, uint8_t *b, uint8_t *am, uint8_t *bm) {$/;"	f	file:
+sw_desc	datapath.h	/^    char  *sw_desc;$/;"	m	struct:datapath
+sw_port	dp_ports.h	/^struct sw_port {$/;"	s
+sw_port_flags	dp_ports.h	/^enum sw_port_flags {$/;"	g
+sw_queue	dp_ports.h	/^struct sw_queue {$/;"	s
+table	crc32.h	/^    unsigned int table[CRC32_TABLE_SIZE];$/;"	m	struct:crc32
+table	flow_entry.h	/^    struct flow_table       *table;$/;"	m	struct:flow_entry	typeref:struct:flow_entry::flow_table
+table	group_entry.h	/^    struct group_table          *table;$/;"	m	struct:group_entry	typeref:struct:group_entry::group_table
+table	meter_entry.h	/^	struct meter_table			*table;			\/* The meter table *\/$/;"	m	struct:meter_entry	typeref:struct:meter_entry::meter_table
+table_id	packet.h	/^    uint8_t             table_id; \/* table in which is processed *\/$/;"	m	struct:packet
+table_miss	packet_handle_std.h	/^   bool						   table_miss; \/*Packet was matched$/;"	m	struct:packet_handle_std
+tables	pipeline.h	/^    struct flow_table  *tables[PIPELINE_TABLES];$/;"	m	struct:pipeline	typeref:struct:pipeline::flow_table
+timeout	dp_buffers.c	/^    time_t         timeout;$/;"	m	struct:packet_buffer	file:
+udatapath_cmd	udatapath.c	/^udatapath_cmd(int argc, char *argv[])$/;"	f
+udatapath_libudatapath_a_CPPFLAGS	automake.mk	/^udatapath_libudatapath_a_CPPFLAGS = $(AM_CPPFLAGS)$/;"	m
+udatapath_libudatapath_a_SOURCES	automake.mk	/^udatapath_libudatapath_a_SOURCES = \\$/;"	m
+udatapath_ofdatapath_CPPFLAGS	automake.mk	/^udatapath_ofdatapath_CPPFLAGS = $(AM_CPPFLAGS)$/;"	m
+udatapath_ofdatapath_LDADD	automake.mk	/^udatapath_ofdatapath_LDADD = lib\/libopenflow.a oflib\/liboflib.a oflib-exp\/liboflib_exp.a nbee_link\/libnbee_link.a $(SSL_LIBS) $(FAULT_LIBS)$/;"	m
+udatapath_ofdatapath_SOURCES	automake.mk	/^udatapath_ofdatapath_SOURCES = \\$/;"	m
+usage	udatapath.c	/^usage(void)$/;"	f	file:
+use_multiple_connections	udatapath.c	/^static bool use_multiple_connections = false;$/;"	v	file:
+valid	packet_handle_std.h	/^   bool                        valid; \/* Set to true if the handler data is valid.$/;"	m	struct:packet_handle_std
+wildcarded	flow_table.c	/^uint32_t wildcarded[] = {OXM_OF_METADATA, OXM_OF_ETH_DST, OXM_OF_ETH_SRC, OXM_OF_VLAN_VID, OXM_OF_IPV4_SRC,$/;"	v
+xid	datapath.h	/^    uint32_t xid;               \/* The OpenFlow transaction ID. *\/$/;"	m	struct:sender
